@@ -90,9 +90,9 @@ body{margin:0;padding:0}body{height:100%}#loading{-webkit-box-pack:center;-ms-fl
 	  if (url == false){
 	  url = "http://rdp-community.wikidot.com/";
 	  }
-    document.getElementById("site").innerHTML = decodeURI(getQueryVariable("site"));
-    document.getElementById("url").innerHTML = decodeURI(getQueryVariable("url"));
-    document.getElementById("go").href = decodeURI(getQueryVariable("url"));
+    document.getElementById("site").innerHTML = site;
+    document.getElementById("url").innerHTML = url;
+    document.getElementById("go").href = url;
   </script>
 </body>
 </html>
