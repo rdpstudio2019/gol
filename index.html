@@ -84,10 +84,10 @@ body{margin:0;padding:0}body{height:100%}#loading{-webkit-box-pack:center;-ms-fl
 }
 	  site = decodeURI(getQueryVariable("site"));
 	  url = decodeURI(getQueryVariable("url"));
-	  if (!site){
+	  if (site == false){
 	  site = "RDPStudio";
 	  }
-	  if (!url){
+	  if (url == false){
 	  url = "http://rdp-community.wikidot.com/";
 	  }
     document.getElementById("site").innerHTML = decodeURI(getQueryVariable("site"));
