@@ -82,13 +82,13 @@ body{margin:0;padding:0}body{height:100%}#loading{-webkit-box-pack:center;-ms-fl
        }
        return(false);
 }
-	  site = decodeURI(getQueryVariable("site"));
-	  url = decodeURI(getQueryVariable("url"));
+	  var site = decodeURI(getQueryVariable("site"));
+	  var url = decodeURI(getQueryVariable("url"));
 	  if (site == false){
-	  site = "RDPStudio";
+	  var site = "RDPStudio";
 	  }
 	  if (url == false){
-	  url = "http://rdp-community.wikidot.com/";
+	  var url = "http://rdp-community.wikidot.com/";
 	  }
     document.getElementById("site").innerHTML = site;
     document.getElementById("url").innerHTML = url;
