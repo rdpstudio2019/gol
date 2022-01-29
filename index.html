@@ -80,14 +80,14 @@ body{margin:0;padding:0}body{height:100%}#loading{-webkit-box-pack:center;-ms-fl
                var pair = vars[i].split("=");
                if(pair[0] == variable){return pair[1];}
        }
-       return(false);
+       return("err");
 }
 	  var site = decodeURI(getQueryVariable("site"));
 	  var url = decodeURI(getQueryVariable("url"));
-	  if (site == false){
+	  if (site == "err"){
 	  var site = "RDPStudio";
 	  }
-	  if (url == false){
+	  if (url == "err"){
 	  var url = "http://rdp-community.wikidot.com/";
 	  }
     document.getElementById("site").innerHTML = site;
