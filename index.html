@@ -61,7 +61,7 @@ body{margin:0;padding:0}body{height:100%}#loading{-webkit-box-pack:center;-ms-fl
                 <div class="warning-ico"></div><div class="loading-text">请注意您的账号、财产和个人隐私安全</div>                        
             </div>                        
             <div class="loading-topic">
-              您即将离开<span id="site">XXX</span>，去往由<span class="loading-url" id="name">XXX</span>提供的：<span class="loading-url" id="url"></span>                       
+              您即将离开<span id="site">XXX</span>，去往由<span class="loading-url" id="uname">XXX</span>提供的：<span class="loading-url" id="url"></span>                       
               <br/>您浏览的是由上方标注的机构(或个人)提供的页面，本站不保证其内容准确性。
             </div>                        
             <div class="flex flex-center"> 
@@ -85,7 +85,7 @@ body{margin:0;padding:0}body{height:100%}#loading{-webkit-box-pack:center;-ms-fl
 }
 	  var site = decodeURI(getQueryVariable("site"));
 	  var url = decodeURI(getQueryVariable("url"));
-    var uname = decodeURI(getQueryVariable("uname"));
+          var uname = decodeURI(getQueryVariable("uname"));
 	  if (site == "err"){
 	  var site = "RDPStudio";
 	  }
@@ -98,7 +98,7 @@ body{margin:0;padding:0}body{height:100%}#loading{-webkit-box-pack:center;-ms-fl
     document.getElementById("site").innerHTML = site;
     document.getElementById("url").innerHTML = url;
     document.getElementById("go").href = url;
-    document.getElementById("name").href = uname;
+    document.getElementById("uname").href = uname;
   </script>
 </body>
 </html>
