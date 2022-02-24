@@ -106,7 +106,8 @@ body{margin:0;padding:0}body{height:100%}#loading{-webkit-box-pack:center;-ms-fl
 	          window.location.href=url;
 	      }else {
 	          userselect = prompt(usec(url) + "\n如果您想继续访问，请输入y", "");
-		  if (password=="y") {
+		      var loggedin = false;
+		  if (userselect=="y") {
 var loggedin = true;
 window.open(url);
 }
